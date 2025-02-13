@@ -1,0 +1,287 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+header .try-it-free {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: white;
+    color: #ff52bf;
+    border: 1px solid #ff52bf;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+header .try-it-free:hover {
+    background-color: #ff52bf;
+    color: white;
+}
+
+.hero {
+    text-align: center;
+    padding: 140px 20px;
+}
+
+.hero-image {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 80%; 
+}
+
+.hero h1 {
+    font-weight: bolder;
+    font-size: 3.8rem;
+    margin-bottom: 30px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+}
+
+.hero button {
+    padding: 30px 90px;
+    font-size: 1.3rem;
+    font-family: Arial, sans-serif;
+    font-weight: 550;
+    background-color: #ff52bf;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.stats div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stats span {
+    font-size: 6rem;
+    font-weight: 900;
+}
+
+.stats p {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+.stats img {
+    width: 50px; 
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left; 
+    gap: 90px; 
+    margin-bottom: 310px; 
+    max-width: 1000px;
+}
+
+.feature img {
+    width: 100%;
+    max-width: 350px; 
+}
+
+.feature-content {
+    flex: 1; 
+}
+
+.feature h2 {
+    font-size: 3rem; 
+    font-weight: 1200;
+    color: #00252e;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+.feature:nth-child(odd) {
+    flex-direction: row-reverse; 
+}
+
+
+.cta {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+.cta h2 {
+    font-size: 2rem; /* Increase font size */
+    font-weight: bolder; /* Extra bold */
+    color: #00252e; /* Darker color for contrast */
+    margin-bottom: 20px; /* Add spacing below */
+    text-transform: uppercase; /* Optional: Makes it all caps */
+    letter-spacing: 1px; /* Improves readability */
+}
+
+.cta button {
+    padding: 30px 90px;
+    font-size: 1.3rem;
+    font-family: Arial, sans-serif;
+    font-weight: 550;
+    background-color: #ff52bf;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.wave-footer {
+    margin: 0;
+    padding: 0;
+    line-height: 0; 
+    position: relative;
+}
+
+
+footer {
+    background-color: #00252e;
+    color: white;
+    padding: 100px 20px 50px;
+    position: relative;
+}
+
+.footer-container {
+    display: flex;
+    gap: 150px;
+    max-width: 1200px;
+    margin: 0 auto 50px;
+}
+
+.footer-info {
+    flex: 1;
+    max-width: 400px;
+}
+
+.footer-logo {
+    filter: brightness(0) invert(1);
+    margin-bottom: 20px;
+}
+
+.footer-text {
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.contact-info p {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.contact-info img {
+    width: 20px;
+    height: 20px;
+}
+
+.newsletter {
+    flex: 1;
+    max-width: 500px;
+}
+
+.newsletter h3 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 15px;
+    border-radius: 8px;
+    border: none;
+}
+
+.newsletter-form button {
+    background: #ff52bf;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.social-links {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-container {
+        text-align: center;
+    }
+
+    .contact-info p {
+        justify-content: center;
+    }
+
+    .newsletter-form button {
+        width: 100%;
+    }
+}
